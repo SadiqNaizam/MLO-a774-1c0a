@@ -32,7 +32,7 @@ const DashboardPage: React.FC = () => {
         onLogout={handleLogout}
         logoSrc="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
       />
-      <nav className="bg-gray-100 dark:bg-gray-800 border-b">
+      <nav className="bg-background border-b"> {/* Updated background */}
         <div className="container mx-auto px-4 md:px-6">
           <NavigationMenu className="py-2">
             <NavigationMenuList>
@@ -111,7 +111,7 @@ const DashboardPage: React.FC = () => {
         </div>
       </main>
 
-      <footer className="py-4 bg-gray-100 dark:bg-gray-800 border-t text-center text-sm text-gray-600 dark:text-gray-400">
+      <footer className="py-4 bg-background border-t text-center text-sm text-muted-foreground"> {/* Updated background and text color for better contrast */}
         © {new Date().getFullYear()} My Dashboard App. All rights reserved.
       </footer>
     </div>
