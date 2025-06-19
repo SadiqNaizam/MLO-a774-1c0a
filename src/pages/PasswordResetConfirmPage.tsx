@@ -59,7 +59,7 @@ const PasswordResetConfirmPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
       <div className="mb-8">
         <AppLogo src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Application Logo" width={100} />
       </div>
@@ -82,7 +82,8 @@ const PasswordResetConfirmPage: React.FC = () => {
             </Alert>
           )}
           {success && (
-            <Alert variant="default" className="mb-4 bg-green-50 border-green-300 text-green-700">
+            // Using a general alert, could use a success variant if available or style manually
+            <Alert variant="default" className="mb-4"> 
               <AlertTitle>Success</AlertTitle>
               <AlertDescription>{success}</AlertDescription>
             </Alert>
@@ -120,7 +121,7 @@ const PasswordResetConfirmPage: React.FC = () => {
           )}
         </CardContent>
         <CardFooter className="text-center text-sm">
-            <Link to="/login" className="text-blue-600 hover:underline">
+            <Link to="/login" className="text-primary hover:underline">
               Back to Login
             </Link>
         </CardFooter>
