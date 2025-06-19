@@ -42,7 +42,7 @@ const RegistrationPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
       <div className="mb-8">
         <AppLogo src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Application Logo" width={100} />
       </div>
@@ -115,7 +115,7 @@ const RegistrationPage: React.FC = () => {
         <CardFooter className="text-center text-sm">
           <p>
             Already have an account?{' '}
-            <Link to="/login" className="text-blue-600 hover:underline">
+            <Link to="/login" className="text-primary hover:underline">
               Login
             </Link>
           </p>
