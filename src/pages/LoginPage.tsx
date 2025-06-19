@@ -39,7 +39,7 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
       <div className="mb-8">
         <AppLogo src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Application Logo" width={100} />
       </div>
@@ -71,7 +71,7 @@ const LoginPage: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label htmlFor="password">Password</Label>
-                <Link to="/password-reset-request" className="text-sm text-blue-600 hover:underline">
+                <Link to="/password-reset-request" className="text-sm text-primary hover:underline">
                   Forgot password?
                 </Link>
               </div>
@@ -102,7 +102,7 @@ const LoginPage: React.FC = () => {
         <CardFooter className="text-center text-sm">
           <p>
             Don't have an account?{' '}
-            <Link to="/register" className="text-blue-600 hover:underline">
+            <Link to="/register" className="text-primary hover:underline">
               Sign up
             </Link>
           </p>
